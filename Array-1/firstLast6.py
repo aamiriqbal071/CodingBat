@@ -1,0 +1,17 @@
+
+# Given an array of ints, return true if 6 appears as either the first or last element in the array. The array will be length 1 or more.
+
+
+# firstLast6([1, 2, 6]) → true
+# firstLast6([6, 1, 2, 3]) → true
+# firstLast6([13, 6, 1, 2, 3]) → false
+
+def firstLast6 (a):
+	if a[0] == 6 or a[-1] == 6:
+		return True
+	else:
+		return False
+
+print(firstLast6([1, 2, 6]))
+print(firstLast6([6, 1, 2, 3]))
+print(firstLast6([13, 6, 1, 2, 3]))
